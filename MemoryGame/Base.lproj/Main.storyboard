@@ -265,7 +265,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Good job!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbr-32-clI">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good job!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbr-32-clI">
                                 <rect key="frame" x="10" y="10" width="394" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="t2y-Z8-uB8"/>
@@ -328,6 +328,8 @@
                             <constraint firstItem="gJ3-mS-LEf" firstAttribute="leading" secondItem="fRE-eP-sl9" secondAttribute="leading" constant="10" id="H1k-BZ-aWs"/>
                             <constraint firstItem="fRE-eP-sl9" firstAttribute="bottom" secondItem="gJ3-mS-LEf" secondAttribute="bottom" constant="100" id="O03-l5-Oas"/>
                             <constraint firstItem="fRE-eP-sl9" firstAttribute="trailing" secondItem="gJ3-mS-LEf" secondAttribute="trailing" constant="10" id="OTX-O5-NYg"/>
+                            <constraint firstItem="sbr-32-clI" firstAttribute="leading" secondItem="fRE-eP-sl9" secondAttribute="leading" constant="10" id="YBu-ju-ofV"/>
+                            <constraint firstItem="fRE-eP-sl9" firstAttribute="trailing" secondItem="sbr-32-clI" secondAttribute="trailing" constant="10" id="cE9-8h-4fy"/>
                             <constraint firstItem="gJ3-mS-LEf" firstAttribute="top" secondItem="sbr-32-clI" secondAttribute="bottom" constant="30" id="owF-sV-7gu"/>
                         </constraints>
                     </view>
@@ -363,7 +365,7 @@
                                 <color key="textColor" systemColor="tertiarySystemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Your Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mzb-jL-odb" userLabel="Name">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mzb-jL-odb" userLabel="Name">
                                 <rect key="frame" x="10" y="120" width="394" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -443,7 +445,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="394" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3Q-mn-xPJ">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3Q-mn-xPJ">
                                                             <rect key="frame" x="176" y="10.5" width="42" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -492,7 +494,9 @@
                         <viewLayoutGuide key="safeArea" id="T3F-Vh-cbd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="T3F-Vh-cbd" firstAttribute="trailing" secondItem="Ytl-Ht-iJX" secondAttribute="trailing" constant="10" id="1N8-93-Pol"/>
                             <constraint firstItem="T3F-Vh-cbd" firstAttribute="bottom" secondItem="On5-sp-6cQ" secondAttribute="bottom" constant="10" id="9vZ-2M-Ahm"/>
+                            <constraint firstItem="Ytl-Ht-iJX" firstAttribute="leading" secondItem="T3F-Vh-cbd" secondAttribute="leading" constant="10" id="D7l-Lo-CZf"/>
                             <constraint firstItem="Ytl-Ht-iJX" firstAttribute="top" secondItem="T3F-Vh-cbd" secondAttribute="top" constant="10" id="JTY-zT-XQH"/>
                             <constraint firstItem="On5-sp-6cQ" firstAttribute="top" secondItem="Ytl-Ht-iJX" secondAttribute="bottom" constant="50" id="LPc-Xw-XKN"/>
                             <constraint firstItem="T3F-Vh-cbd" firstAttribute="trailing" secondItem="Ytl-Ht-iJX" secondAttribute="trailing" constant="10" id="TSG-DE-s53"/>
