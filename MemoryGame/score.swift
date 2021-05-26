@@ -20,15 +20,8 @@ class score : Codable{
         self.name = name
     }
     
-    func getTime()->Int{
-        return self.time
-    }
-    
     func getLocation()->PlayerLocation{
         return self.location
     }
     
-    func getName()->String{
-        return self.name
-    }
 }
