@@ -173,10 +173,7 @@ class ViewController: UIViewController {
         initGame()
     }
     
-    @IBAction func resetGameClicked(_ sender: Any) {
-        resetGame()
-    }
-    
+
     func hideCards() {
         for button in self.buttons{
             button.imageView?.layer.transform = CATransform3DMakeScale(0.0, 0.0, 0.0)
@@ -189,14 +186,12 @@ class ViewController: UIViewController {
 extension ViewController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        print("didUpdateLocations")
 
         if let location = locations.last {
             locationManager.stopUpdatingLocation()
             let lat = location.coordinate.latitude
             let lon = location.coordinate.longitude
             myLocation = PlayerLocation(lat: lat, lon: lon)
-            print("got Location: \(lat) \(lon)")
         }
     }
 
